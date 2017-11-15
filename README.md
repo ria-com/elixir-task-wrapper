@@ -16,12 +16,12 @@ res = Task.await(task)
 
 ```elixir
 def deps do
-  [{:elixir_task, "~> 0.1.0"}]
+  [{:ria_task, git: "https://github.com/ria-com/elixir-task-wrapper.git"}]
 end
 ```
 
 ## Testing
 
 ```bash
-[elixir-task-wrapper]# mix test
+[ria-task-wrapper]# mix test
 ```
