@@ -23,5 +23,5 @@ end
 ## Testing
 
 ```bash
-[ria-task-wrapper]# mix test
+[elixir-task-wrapper]# mix test
 ```
