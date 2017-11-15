@@ -9,7 +9,7 @@ alias Ria.Task
 # ...
 task = Task.async(fn -> do_some_work() end)
 # ...
-res = Task.await(task)
+res = Task.await(task, 100)
 ```
 
 ## Installation
