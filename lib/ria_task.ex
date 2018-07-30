@@ -28,7 +28,7 @@ defmodule Ria.Task do
 
   """
   def await(task, timeout \\ 5_000) do
-    case Task.yield(task, timeout) do
+    case Task.yield(task, timeout) || Task.shutdown(task) do
       {:ok, term} -> term
       _ -> nil
     end
